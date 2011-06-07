@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+  lower: "under 1000 rub."
+  first_range: "Between 1000 and 3000 rub."
+  second_range: "Between 3000 and 8000 rub."
+  fourth_range: "Between 8000 and 10000 rub."
+  upper: "Upper 10000 rub."
+  brands: "Brands"
