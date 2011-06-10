@@ -1,0 +1,12 @@
+card:
+  name: "Кредитная карта"
+  description: "Оплата пластиковой картой(Visa/MasterCard/Maestro)"
+  active: true
+  environment: <%= Rails.env %>
+  type: Gateway::Bogus
+check_method:
+  name: "Наличные"
+  description: "Оплата наличными"
+  active: true
+  environment: <%= Rails.env %>
+  type: PaymentMethod::Check

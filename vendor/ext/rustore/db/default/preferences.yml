@@ -1,0 +1,5 @@
+flat_rate_ground:
+  name: amount
+  owner: fix_rate
+  owner_type: Calculator
+  value: 300
