@@ -1,0 +1,4 @@
+fix_rate:
+  calculable: courier
+  calculable_type: ShippingMethod
+  type: Calculator::FlatRate
