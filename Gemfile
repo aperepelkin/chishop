@@ -5,9 +5,15 @@ gem 'rails', '3.0.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'haml'
+gem 'semantic_form_for'
+gem 'formtastic'
+
 gem 'sqlite3'
 gem 'spree'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+gem 'spree_editor'
+gem 'spree_static_content'
 gem 'rake', '0.8.7'
 
 # Use unicorn as the web server
