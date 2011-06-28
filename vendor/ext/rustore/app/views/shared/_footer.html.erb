@@ -1,0 +1,20 @@
+<div id="footer">
+  <div class="left">
+    <%= hook :footer_left do %>
+        <p>
+          <%= t("powered_by") %> <a href="http://spreecommerce.com/">Spree</a>
+        </p>
+    <% end %>
+  </div>
+  <div class="right">
+    <%= hook :footer_right %>
+  </div>
+  <% cache 'footer_menu' do %>
+      <ul class="footer_menu">
+        <% for page in Page.footer_links do %>
+            <li><%= link_to page.title, page.link %></li>
+        <% end %>
+      </ul>
+  <% end %>
+</div>
+<%= render 'shared/google_analytics' %>
