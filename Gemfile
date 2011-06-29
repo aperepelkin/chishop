@@ -9,6 +9,7 @@ gem 'haml'
 gem 'semantic_form_for'
 gem 'formtastic'
 
+gem "mysql2", "0.2.8", :group => [:production]
 gem 'sqlite3'
 gem 'spree'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
