@@ -8,3 +8,8 @@ ru:
         precision: 2
         separator: '.'
         delimiter: ' '
+    format:
+      format: "%n"
+      precision: 2
+      separator: '.'
+      delimiter: ' '
