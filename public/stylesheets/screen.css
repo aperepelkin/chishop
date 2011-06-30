@@ -260,7 +260,8 @@ legend {
 }
 body {
   margin-top: 10px;
-  background: #ffffff url(../images/body-back.png) top left repeat-x;
+  /*background: #ffffff url(../images/body-back.png) top left repeat-x;*/
+  background:#E9F5F4;
 }
 div.left {
   float: left;
@@ -276,7 +277,7 @@ a { outline: none; }
   padding: 25px 20px 20px;
   position: relative;
 }
-body.two-col #wrapper { background:#E9F5F4; /*background-image: url(../images/wrapper-back-2.png);*/ }
+body.two-col #wrapper { background-image: url(../images/wrapper-back-2.png); }
 .container {
   width: 950px;
   margin: 0 auto;
