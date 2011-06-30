@@ -311,9 +311,6 @@ body.two-col #content {
 }
 #header a { color: #2e6ab1; }
 #header a:hover { color: #eeeeee; }
-#header_menu { float: right; }
-#header_menu ul.header_menu, #sidebar_menu ul.sidebar_menu, #footer ul.footer_menu { list-style: none; }
-#header_menu ul.header_menu li, #footer ul.footer_menu li { float:left; margin: 0 8px; }
 #footer {
   padding-top: 2em;
   clear: both;
