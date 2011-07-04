@@ -22,4 +22,6 @@ class RustoreHooks < Spree::ThemeSupport::HookListener
      <% end %>
     </dl>)
   end
+
+  replace :cart_item_description, 'order/order_item_detail'
 end
