@@ -6,7 +6,7 @@
 Состав посылки
 ============================================================
 <% for item in @shipment.line_items %>
-<%=item.variant.sku %> <%=item.variant.product.name%> <%= variant_options(item.variant) %> (<%=item.quantity%>)
+<%=item.variant.sku %> <%=item.variant.product.name%> <%= variant_options(item.variant).html_safe %> (<%=item.quantity%>)
 <% end %>
 ============================================================
 

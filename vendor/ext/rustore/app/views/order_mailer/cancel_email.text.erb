@@ -6,7 +6,7 @@
 Сводка по заказу <%= @order.number %> [ОТМЕНЕН]
 ============================================================
 <% for item in @order.line_items %>
-<%=item.variant.sku %> <%=item.variant.product.name%> <%= variant_options(item.variant) %> (<%=item.quantity%>) @ <%= number_to_currency item.price %> = <%= number_to_currency(item.price * item.quantity) %>
+<%=item.variant.sku %> <%=item.variant.product.name%> <%= variant_options(item.variant).html_safe %> (<%=item.quantity%>) @ <%= number_to_currency item.price %> = <%= number_to_currency(item.price * item.quantity) %>
 <% end %>
 ============================================================
 Стоимость товаров: <%= number_to_currency @order.item_total %>
