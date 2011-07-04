@@ -272,13 +272,14 @@ div.right {
   width: 49%;
 }
 a { outline: none; }
+#wrapper-top { width: 990px; height: 36px; background: url(../images/wrapper-back-top.png) repeat-y; }
+body.one-col #wrapper-top { background-image: url(../images/wrapper-back-top-onecol.png); }
 #wrapper {
-  background: transparent url(../images/wrapper-back.png) top center no-repeat;
-  padding: 36px 20px 20px;
+  background: transparent url(../images/wrapper-back2-onecol.png) repeat-y;
+  width: 990px;
   position: relative;
 }
-#wrapper-top { width: 990px; height: 36px; background: url(../images/wrapper-back-top.png) repeat-y; }
-body.two-col #wrapper { padding: 0; width: 990px; background: url(../images/wrapper-back2.png) repeat-y; }
+body.two-col #wrapper { background: url(../images/wrapper-back2.png) repeat-y; }
 .container {
   width: 950px;
   margin: 0 auto;
@@ -297,6 +298,7 @@ body.one-col #content {
   display: inline;
   float: left;
   width: 950px;
+  padding: 0 20px;
 }
 body.two-col #content {
   display: inline;
@@ -319,7 +321,8 @@ body.two-col #content {
   padding-top: 2em;
   clear: both;
 }
-#footer.container { height:197px; background: url(../images/wrapper-footer.png) no-repeat; padding: 0 20px; }
+#footer { height:197px; background: url(../images/wrapper-footer.png) no-repeat; padding: 0 20px; }
+body.one-col #footer { background-image: url(../images/wrapper-footer-onecol.png); }
 #footer div.left { width: 37%; }
 #footer div.right {
   width: 63%;
