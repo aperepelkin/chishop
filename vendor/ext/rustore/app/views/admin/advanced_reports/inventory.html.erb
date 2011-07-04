@@ -1,0 +1,30 @@
+<h1>SKU</h1>
+
+<table class="admin-report">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>Name</th>
+      <th>Count</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%- @products.each do |product| %>
+      <tr>
+        <td><b><%= product.sku %></b></td>
+        <td><b><%= product.name %></b></td>
+        <td><b><%= product.on_hand %></b></td>
+        <td><b><%= product.price %></b></td>
+      </tr>
+      <%- product.variants.each do |variant| %>
+        <tr>
+          <td><%= variant.sku %></td>
+          <td><%= variant.name %></td>
+          <td><%= variant.on_hand %></td>
+          <td><%= variant.price %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
