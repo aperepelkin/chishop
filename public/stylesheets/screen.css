@@ -274,10 +274,11 @@ div.right {
 a { outline: none; }
 #wrapper {
   background: transparent url(../images/wrapper-back.png) top center no-repeat;
-  padding: 25px 20px 20px;
+  padding: 36px 20px 20px;
   position: relative;
 }
-body.two-col #wrapper { background-image: url(../images/wrapper-back-2.png); }
+#wrapper-top { width: 990px; height: 36px; background: url(../images/wrapper-back-top.png) repeat-y; }
+body.two-col #wrapper { padding: 0; width: 990px; background: url(../images/wrapper-back2.png) repeat-y; }
 .container {
   width: 950px;
   margin: 0 auto;
@@ -289,10 +290,7 @@ body.two-col #wrapper { background-image: url(../images/wrapper-back-2.png); }
   float: left;
   width: 150px;
   min-height: 100px;
-  margin-right: 10px;
-  padding-right: 24px;
-  margin-right: 25px;
-  border-right: 1px solid #eeeeee;
+  padding: 0 24px 0 20px; 
 }
 #sidebar h3 { margin-bottom: 0.5em; }
 body.one-col #content {
@@ -304,6 +302,7 @@ body.two-col #content {
   display: inline;
   float: left;
   width: 750px;
+  padding: 0 20px 0 25px;
 }
 #header {
   position: relative;
@@ -316,9 +315,11 @@ body.two-col #content {
 #header_menu ul.header_menu, #sidebar_menu ul.sidebar_menu, #footer ul.footer_menu { list-style: none; }
 #header_menu ul.header_menu li, #footer ul.footer_menu li { float:left; margin: 0 8px; }
 #footer {
+  padding: 0 20px;
   padding-top: 2em;
   clear: both;
 }
+#footer.container { height:197px; background: url(../images/wrapper-footer.png) no-repeat; padding: 0 20px; }
 #footer div.left { width: 37%; }
 #footer div.right {
   width: 63%;

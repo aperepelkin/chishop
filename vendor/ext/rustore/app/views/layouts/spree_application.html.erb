@@ -32,7 +32,7 @@
     </div>
   </div>
 </div>
-
+<div id="wrapper-top" class="container"></div>
 <div id="wrapper" class="container">
   <% if content_for?(:sidebar) %>
       <div id="sidebar">
@@ -61,9 +61,7 @@
     <% end %>
     <%= yield %>
   </div>
-  <%= render :partial => 'shared/footer' %>
-
 </div>
-
+<%= render :partial => 'shared/footer' %>
 </body>
 </html>
