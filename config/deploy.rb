@@ -47,4 +47,5 @@ end
 
 task :create_symlinks do
   run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml"
+  run "ln -nfs #{deploy_to}/#{shared_dir}/assets #{release_path}/public/assets"
 end
