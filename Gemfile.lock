@@ -14,6 +14,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.7-x86-mingw32)
     abstract (1.0.0)
     actionmailer (3.0.7)
       actionpack (= 3.0.7)
@@ -186,6 +187,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  RedCloth (~> 4.2.7)
   capistrano
   formtastic
   haml
@@ -195,7 +197,6 @@ DEPENDENCIES
   rustore!
   semantic_form_for
   spree
-  spree_editor
   spree_i18n!
   spree_static_content
   sqlite3
