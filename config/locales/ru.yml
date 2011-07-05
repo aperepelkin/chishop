@@ -135,7 +135,7 @@ ru:
         password_confirmation: "Подтверждение пароля"
       variant: 
         cost_price: "Себестоимость"
-        depth: "Глубина"
+        depth: "Длина"
         height: "Высота"
         price: "Цена"
         sku: "Артикул"
@@ -367,7 +367,7 @@ ru:
   default_seo_title: "SEO-заголовок по умолчанию"
   delete: "Удалить"
   delivery: "Доставка"
-  depth: "Глубина"
+  depth: "Длина"
   description: "Описание"
   destroy: "Удалить"
   didnt_receive_confirmation_instructions: "Не получили инструкций по подтверждению?"
