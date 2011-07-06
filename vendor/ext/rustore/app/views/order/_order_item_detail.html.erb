@@ -1,3 +1,3 @@
 <h4><%= link_to variant.product.name,  product_path(variant.product) %></h4>
 <%= variant_options variant %>
-<%= truncate(RedCloth.new(variant.product.description).to_html.gsub(/<\/?[^>]*>/, " "), :length => 100, :omission => "...") %>
+<%= truncate(RedCloth.new(variant.product.description).to_html.gsub(/<\/?[^>]*>/, " "), :length => 100, :omission => "...") if variant.product.description? %>

@@ -1,1 +1,1 @@
-<%= RedCloth.new(@product.description).to_html.html_safe %>
+<%= RedCloth.new(@product.description).to_html.html_safe if @product.description?%>
