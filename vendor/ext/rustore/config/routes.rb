@@ -6,5 +6,13 @@ Rails.application.routes.draw do
         get :inventory
       end
     end
+    resources :orders do
+      member do
+        get :deliver
+        post :deliver
+        get :delivered
+        post :delivered
+      end
+    end
   end
 end

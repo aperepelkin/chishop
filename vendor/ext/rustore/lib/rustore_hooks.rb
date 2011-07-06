@@ -3,4 +3,5 @@ class RustoreHooks < Spree::ThemeSupport::HookListener
 
   replace :product_description, 'products/description'
   replace :cart_item_description, 'order/order_item_detail'
+  replace :admin_order_show_buttons, 'admin/orders/order_buttons'
 end
