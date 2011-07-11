@@ -11,7 +11,11 @@
   </thead>
   <tbody>
   <%- @products.each do |product| %>
-      <tr>
+      <tr class="<%= if !is_invalid(product)
+                             cycle('report_line_odd', 'report_line_even')
+                         else
+                             cycle('report_error_line_odd', 'report_error_line_even')
+                         end %>">
         <td><b><%= product.sku %></b></td>
         <td><b><%= product.name %></b></td>
         <td><b><%= product.on_hand %></b></td>
