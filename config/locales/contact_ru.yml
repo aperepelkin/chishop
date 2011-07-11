@@ -1,0 +1,14 @@
+ru:
+  contact_us: Связаться с нами
+  send_message: Послать сообщение
+  subject: Предмет
+  optional: необязательно
+  message: Сощбщение
+  topic: Тема
+  invalid_order_number: "Должен начинаться с 'R' и затем  9 чисел (пример: R123123213)"
+  contact_thank_you: "Спасибо! Ваше сообщение успешно отправлено, мы с вами свяжемся как можно скорее"
+  contact_topics: Темы сообщений
+  contact_topics_description: Setup topics for the contact form, choose which email address topics should be routed to
+  emails: Emails
+  new_contact_topic: New Contact Topic
+  comma_delimited: comma delimited

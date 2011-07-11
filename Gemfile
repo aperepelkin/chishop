@@ -15,6 +15,7 @@ gem 'spree'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 gem 'spree_static_content'
 gem 'rake', '0.8.7'
+gem 'spree_contact_form'
 
 gem "RedCloth", "~> 4.2.7"
 
