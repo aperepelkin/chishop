@@ -17,10 +17,14 @@
         <td><b><%= product.on_hand %></b></td>
         <td><b><%= product.price %></b></td>
       </tr>
-      <%- product.variants.each do |variant| %>
+      <%- product.variants.active.each do |variant| %>
         <tr>
           <td><%= variant.sku %></td>
-          <td><%= variant.name %></td>
+          <td><%= variant.name %>
+            <%- variant.option_values.each do |option| %>
+             ;<%= option.name %>
+            <% end %>
+          </td>
           <td><%= variant.on_hand %></td>
           <td><%= variant.price %></td>
         </tr>

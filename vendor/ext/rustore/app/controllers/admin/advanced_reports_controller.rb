@@ -11,7 +11,7 @@ class Admin::AdvancedReportsController < Admin::BaseController
   end
 
   def inventory
-    @products = Product.joins(:variants_with_only_master).order('sku').all
+    @products = Product.joins(:variants_with_only_master).order('sku').not_deleted
 
     respond_with
   end
