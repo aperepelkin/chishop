@@ -583,3 +583,18 @@ span.handle{
   width:14px;
   height:15px;
 }
+
+.report_line_even {
+    background: #009900;
+}
+
+.report_line_odd {
+    background: #99ff99;
+}
+.report_error_line_even {
+    background: #ff0000;
+}
+
+.report_error_line_odd {
+    background: #ff9999;
+}

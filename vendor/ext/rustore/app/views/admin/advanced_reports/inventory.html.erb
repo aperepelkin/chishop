@@ -2,15 +2,15 @@
 
 <table class="admin-report">
   <thead>
-    <tr>
-      <th>SKU</th>
-      <th>Name</th>
-      <th>Count</th>
-      <th>Price</th>
-    </tr>
+  <tr>
+    <th>SKU</th>
+    <th>Name</th>
+    <th>Count</th>
+    <th>Price</th>
+  </tr>
   </thead>
   <tbody>
-    <%- @products.each do |product| %>
+  <%- @products.each do |product| %>
       <tr>
         <td><b><%= product.sku %></b></td>
         <td><b><%= product.name %></b></td>
@@ -18,17 +18,21 @@
         <td><b><%= product.price %></b></td>
       </tr>
       <%- product.variants.active.each do |variant| %>
-        <tr>
-          <td><%= variant.sku %></td>
-          <td><%= variant.name %>
-            <%- variant.option_values.each do |option| %>
-             ;<%= option.name %>
-            <% end %>
-          </td>
-          <td><%= variant.on_hand %></td>
-          <td><%= variant.price %></td>
-        </tr>
+          <tr class="<%= if !is_invalid(variant)
+                             cycle('report_line_odd', 'report_line_even')
+                         else
+                             cycle('report_error_line_odd', 'report_error_line_even')
+                         end %>">
+            <td><%= variant.sku %></td>
+            <td><%= variant.name %>
+              <%- variant.option_values.each do |option| %>
+                  ;<%= option.name %>
+              <% end %>
+            </td>
+            <td><%= variant.on_hand %></td>
+            <td><%= variant.price %></td>
+          </tr>
       <% end %>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
