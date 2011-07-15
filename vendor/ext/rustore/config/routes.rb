@@ -14,5 +14,11 @@ Rails.application.routes.draw do
         post :delivered
       end
     end
+    resources :promotions do
+      member do
+        post :replicate
+        get :replicate
+      end
+    end
   end
 end

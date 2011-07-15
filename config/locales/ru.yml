@@ -106,7 +106,7 @@ ru:
         name: "Название"
         starts_at: "Дата начала промо-акции"
         usage_limit: "Максимальное кол-во применений"
-      property: 
+      property:
         name: "Наименование"
         presentation: "Отображать как"
       prototype: 
@@ -825,7 +825,13 @@ ru:
   products: "Товары"
   products_with_zero_inventory_display: "Отсутсвующие товары %{not} будут отображаться"
   promotion: "Промо-акция"
-  promotion_form: 
+  prefix: "Перфикс"
+  start_from: "Начать с"
+  stop_to: "Закончить на"
+  create_promotions: "Создать купоны"
+  replication: "Тиражирование"
+  replicate: "Тиражировать"
+  promotion_form:
     match_policies: 
       all: "Соответствует всем этим правилам"
       any: "Соответствует хотя бы одному правилу"

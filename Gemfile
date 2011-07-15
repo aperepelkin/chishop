@@ -12,6 +12,7 @@ gem 'formtastic'
 gem "mysql2", "0.2.8", :group => [:production]
 gem 'sqlite3'
 gem 'spree'
+gem 'spree_promo'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 gem 'spree_static_content'
 gem 'rake', '0.8.7'

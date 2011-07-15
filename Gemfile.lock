@@ -201,5 +201,6 @@ DEPENDENCIES
   spree
   spree_contact_form
   spree_i18n!
+  spree_promo
   spree_static_content
   sqlite3
