@@ -15,6 +15,8 @@ module Rustore
       delivery_event.transition(:to => 'delivery')
       Order.state_machine.events << delivery_event
 
+      Calculator::PriceFixVolumeDiscount.register
+
     end
 
     config.to_prepare &method(:activate).to_proc
